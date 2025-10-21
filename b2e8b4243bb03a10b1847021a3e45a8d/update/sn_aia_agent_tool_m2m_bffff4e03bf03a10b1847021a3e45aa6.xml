@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_tool_m2m">
+    <sn_aia_agent_tool_m2m action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Collaboration Agent">129f78a03bf03a10b1847021a3e45ac1</agent>
+        <description>This tool exists to get the information from the incident being worked on.</description>
+        <display_output>false</display_output>
+        <document_status/>
+        <execution_mode>autopilot</execution_mode>
+        <inputs>[]</inputs>
+        <max_auto_executions>10</max_auto_executions>
+        <name>Gather Incident Details</name>
+        <output_transformation_strategy>none</output_transformation_strategy>
+        <post_message/>
+        <post_processing_script/>
+        <pre_message/>
+        <sys_class_name>sn_aia_agent_tool_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 17:44:48</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>bffff4e03bf03a10b1847021a3e45aa6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Gather Incident Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name>sn_aia_agent_tool_m2m_bffff4e03bf03a10b1847021a3e45aa6</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 17:44:48</sys_updated_on>
+        <tool display_value="Gather Incident Details">a6852e5c3b48ba10b1847021a3e45a0b</tool>
+        <tool_attributes>{}</tool_attributes>
+        <transformation_instructions/>
+    </sn_aia_agent_tool_m2m>
+</record_update>

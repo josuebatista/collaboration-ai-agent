@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_version">
+    <sn_aia_version action="INSERT_OR_UPDATE">
+        <condition/>
+        <instructions>These steps should occur in the exact order listed. The &lt;findings&gt; should be collected from the AI Agent Troubleshooting Summary. 
+
+Step 1. Retrieve the details of the incident record using tools provided.
+
+Step 2. Identify the service owner for the affected service. When summarizing the results always refer to them as the 'service owner'.
+
+Step 3. Present the following message to the user "Would you like me to email &lt;first name of service owner&gt; to let them know about this disruption?". Always wait for user response to this step.
+
+Step 4. Use the provided tools to notify the service owner via email. 
+
+Step 5. Present the following message to the user: "Message has been sent"
+
+Step 6. Create an outage record for that service using the tools provided. 
+
+Step 7. Present the following message to the user: "Outage has been created."
+
+Step 8. Create an announcement record for the affected service using the tools provided.
+
+Step 9. Present the following message to the user: "Announcement for end users has been created"
+
+Step 10. Create a Miro board using the tools provided. The &lt;board name&gt; should be the incident record number. The &lt;title&gt; input should be the &lt;findings&gt;. Present the following message to the user: &lt;Output of Miro Board Creation&gt;. Do not proceed to the next step until this step is complete. 
+
+Step 11. Start a Teams Bridge using the provided tools 
+
+  * The azure id's should be 01d89e5e-de64-4556-92fa-8e7629156fbd and f7f331d4-50e1-411b-91b5-f3fd33af2b15. These should be captured in json format as a string the the tool input. 
+  * The title should always be: "Alert!! &lt;incident number&gt;"
+
+Step 12. Present the following message to the user: "Teams bridge created successfully!"
+
+Step 13. Notify the support group using the tools provided. The business service input should be the business_service from the incident. 
+
+Step 14. Present the following message to the user: "Support teams have been notified!"</instructions>
+        <state>published</state>
+        <sys_class_name>sn_aia_version</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 17:44:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>42dfb0e03bf03a10b1847021a3e45a67</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>V1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name>sn_aia_version_42dfb0e03bf03a10b1847021a3e45a67</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 17:44:08</sys_updated_on>
+        <target_id>129f78a03bf03a10b1847021a3e45ac1</target_id>
+        <target_table>sn_aia_agent</target_table>
+        <version_name>V1</version_name>
+        <version_number>1</version_number>
+    </sn_aia_version>
+</record_update>
