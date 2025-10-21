@@ -1,0 +1,2245 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This tool exists to find the service owner and the service owner email address.</description>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>fetch_service_owner_details</internal_name>
+        <label_cache>[{"name":"{{action.incident_number}}","label":"action➛incident_number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_name}}","label":"step➛Script step➛owner_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"239bdf9f-9a23-4efe-8358-59cd843debdf"}},{"name":"{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_email}}","label":"step➛Script step➛owner_email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"967cb8bb-d4e3-4f7c-85b0-b135e5c30196"}}]</label_cache>
+        <master_snapshot>0894496c3bf03a10b1847021a3e45a72</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Fetch Service Owner Details</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f9f3012c3bf03a10b1847021a3e45a36</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Fetch Service Owner Details</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_f9f3012c3bf03a10b1847021a3e45a36</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=f9f3012c3bf03a10b1847021a3e45a36"/>
+    <sys_variable_value action="delete_multiple" query="document_key=f9f3012c3bf03a10b1847021a3e45a36"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>f9f3012c3bf03a10b1847021a3e45a36</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>8a04852c3bf03a10b1847021a3e45a59</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">f104852c3bf03a10b1847021a3e45a3e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>f9f3012c3bf03a10b1847021a3e45a36</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>ca04852c3bf03a10b1847021a3e45a58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">3d04852c3bf03a10b1847021a3e45a46</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=f9f3012c3bf03a10b1847021a3e45a36"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>owner_email</field>
+        <id>f9f3012c3bf03a10b1847021a3e45a36</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:10</sys_created_on>
+        <sys_id>6b64c16c3bf03a10b1847021a3e45af7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</table>
+        <value>{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>owner_name</field>
+        <id>f9f3012c3bf03a10b1847021a3e45a36</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:10</sys_created_on>
+        <sys_id>af64c16c3bf03a10b1847021a3e45af7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:10</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</table>
+        <value>{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>f9f3012c3bf03a10b1847021a3e45a36</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>0a04852c3bf03a10b1847021a3e45a58</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>f9f3012c3bf03a10b1847021a3e45a36</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>ca04852c3bf03a10b1847021a3e45a57</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=f9f3012c3bf03a10b1847021a3e45a36^sys_idNOT IN97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</action>
+        <cid>29e2a6df-341b-4dfc-afc2-6aba9e06398b</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:20</sys_created_on>
+        <sys_id>97344d2c3bf03a10b1847021a3e45a0b</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>97344d2c3bf03a10b1847021a3e45a0b</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>23344d2c3bf03a10b1847021a3e45a4e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+	var inc = new GlideRecord('incident');&#13;
+	if (inc.get('number', inputs.incident_number)) {&#13;
+		var serviceList = inc.business_service;&#13;
+&#13;
+		if (serviceList) {&#13;
+			var sysIds = serviceList.split(',');&#13;
+			if (sysIds.length &gt; 0) {&#13;
+				var names = [];&#13;
+				var emails = [];&#13;
+&#13;
+				var svc = new GlideRecord('cmdb_ci_service_auto');&#13;
+				svc.addQuery('sys_id', 'IN', sysIds);&#13;
+				svc.query();&#13;
+&#13;
+				while (svc.next()) {&#13;
+					var owner = svc.owned_by;&#13;
+					if (owner) {&#13;
+						names.push(owner.getDisplayValue());&#13;
+						emails.push(owner.email.toString());&#13;
+					}&#13;
+				}&#13;
+&#13;
+				outputs.owner_name = names.join(', ');&#13;
+				outputs.owner_email = emails.join(', ');&#13;
+			} else {&#13;
+				outputs.owner_name = 'No services found';&#13;
+				outputs.owner_email = '';&#13;
+			}&#13;
+		} else {&#13;
+			outputs.owner_name = 'No business services linked';&#13;
+			outputs.owner_email = '';&#13;
+		}&#13;
+	} else {&#13;
+		outputs.owner_name = 'Incident not found';&#13;
+		outputs.owner_email = '';&#13;
+	}&#13;
+})(inputs, outputs); </value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>97344d2c3bf03a10b1847021a3e45a0b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>eb344d2c3bf03a10b1847021a3e45a4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>97344d2c3bf03a10b1847021a3e45a0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>e3344d2c3bf03a10b1847021a3e45a4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>incident_number</field>
+        <id>97344d2c3bf03a10b1847021a3e45a0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>67344d2c3bf03a10b1847021a3e45a4f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_97344d2c3bf03a10b1847021a3e45a0b</table>
+        <value>{{action.incident_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>97344d2c3bf03a10b1847021a3e45a0b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>2b344d2c3bf03a10b1847021a3e45a4d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_97344d2c3bf03a10b1847021a3e45a0b^id=97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=97344d2c3bf03a10b1847021a3e45a0b^sys_idNOT INef344d2c3bf03a10b1847021a3e45a15"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>incident_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">97344d2c3bf03a10b1847021a3e45a0b</model>
+        <model_id>97344d2c3bf03a10b1847021a3e45a0b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_97344d2c3bf03a10b1847021a3e45a0b</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:20</sys_created_on>
+        <sys_id>ef344d2c3bf03a10b1847021a3e45a15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=97344d2c3bf03a10b1847021a3e45a0b^sys_idNOT IN23344d2c3bf03a10b1847021a3e45a1d,a3344d2c3bf03a10b1847021a3e45a3d"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=239bdf9f-9a23-4efe-8358-59cd843debdf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>owner_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">97344d2c3bf03a10b1847021a3e45a0b</model>
+        <model_id>97344d2c3bf03a10b1847021a3e45a0b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_97344d2c3bf03a10b1847021a3e45a0b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>23344d2c3bf03a10b1847021a3e45a1d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=967cb8bb-d4e3-4f7c-85b0-b135e5c30196</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>owner_email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">97344d2c3bf03a10b1847021a3e45a0b</model>
+        <model_id>97344d2c3bf03a10b1847021a3e45a0b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_97344d2c3bf03a10b1847021a3e45a0b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>a3344d2c3bf03a10b1847021a3e45a3d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=97344d2c3bf03a10b1847021a3e45a0b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_name</element>
+        <help/>
+        <hint/>
+        <label>owner_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_97344d2c3bf03a10b1847021a3e45a0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>23344d2c3bf03a10b1847021a3e45a23</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_email</element>
+        <help/>
+        <hint/>
+        <label>owner_email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_97344d2c3bf03a10b1847021a3e45a0b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:21</sys_created_on>
+        <sys_id>a7344d2c3bf03a10b1847021a3e45a41</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:21</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=f9f3012c3bf03a10b1847021a3e45a36^sys_idNOT IN7504452c3bf03a10b1847021a3e45a29"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=18e09d05-ca3a-4712-ae1d-9b2f9042d515</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>incident_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>incident_number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</model>
+        <model_id>f9f3012c3bf03a10b1847021a3e45a36</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>7504452c3bf03a10b1847021a3e45a29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7504452c3bf03a10b1847021a3e45a29"/>
+    <sys_hub_action_output action="delete_multiple" query="model=f9f3012c3bf03a10b1847021a3e45a36^sys_idNOT IN3d04852c3bf03a10b1847021a3e45a46,4464416c3bf03a10b1847021a3e45aa8,4864416c3bf03a10b1847021a3e45ab4,f104852c3bf03a10b1847021a3e45a3e"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ac1e102a-65f4-41a9-b99b-de8c241747f5,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</model>
+        <model_id>f9f3012c3bf03a10b1847021a3e45a36</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>3d04852c3bf03a10b1847021a3e45a46</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3d04852c3bf03a10b1847021a3e45a46"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3d04852c3bf03a10b1847021a3e45a46"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=variable_template_value,uiTypeLabel=Variable template value,uiUniqueId=13a50680-e4a1-455d-9b5b-e4d9f64c8a58</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">variable_template_value</internal_type>
+        <label>owner_name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</model>
+        <model_id>f9f3012c3bf03a10b1847021a3e45a36</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:56</sys_created_on>
+        <sys_id>4464416c3bf03a10b1847021a3e45aa8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4464416c3bf03a10b1847021a3e45aa8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4464416c3bf03a10b1847021a3e45aa8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=variable_template_value,uiTypeLabel=Variable template value,uiUniqueId=2266d055-08ef-4ff6-9ccd-361cf1b921a2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_email</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">variable_template_value</internal_type>
+        <label>owner_email</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</model>
+        <model_id>f9f3012c3bf03a10b1847021a3e45a36</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:56</sys_created_on>
+        <sys_id>4864416c3bf03a10b1847021a3e45ab4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4864416c3bf03a10b1847021a3e45ab4"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4864416c3bf03a10b1847021a3e45ab4"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=6d07bc60-78f3-4e0b-a84b-903c8e420bbf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</model>
+        <model_id>f9f3012c3bf03a10b1847021a3e45a36</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>f104852c3bf03a10b1847021a3e45a3e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:56</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f104852c3bf03a10b1847021a3e45a3e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f104852c3bf03a10b1847021a3e45a3e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=f9f3012c3bf03a10b1847021a3e45a36"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=f9f3012c3bf03a10b1847021a3e45a36^sys_idNOT INc204852c3bf03a10b1847021a3e45a5c"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>c204852c3bf03a10b1847021a3e45a5c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=c204852c3bf03a10b1847021a3e45a5c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>incident_number</element>
+        <help/>
+        <hint/>
+        <label>incident_number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>bd04452c3bf03a10b1847021a3e45af7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_f9f3012c3bf03a10b1847021a3e45a36"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>0604852c3bf03a10b1847021a3e45a51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_name</element>
+        <help/>
+        <hint/>
+        <label>owner_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:56</sys_created_on>
+        <sys_id>0864416c3bf03a10b1847021a3e45aae</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:02:25</sys_created_on>
+        <sys_id>3904852c3bf03a10b1847021a3e45a45</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:02:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_email</element>
+        <help/>
+        <hint/>
+        <label>owner_email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:03:56</sys_created_on>
+        <sys_id>8c64416c3bf03a10b1847021a3e45ab9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:03:56</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_f9f3012c3bf03a10b1847021a3e45a36"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=f9f3012c3bf03a10b1847021a3e45a36^sys_idNOT IN6094896c3bf03a10b1847021a3e45a76"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"6094896c3bf03a10b1847021a3e45a76","name":"plan","plan_signature":null}}</plan>
+        <snapshot>d894496c3bf03a10b1847021a3e45aff</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6094896c3bf03a10b1847021a3e45a76</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:47</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>28100</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>This tool exists to find the service owner and the service owner email address.</description>
+        <flow_priority/>
+        <internal_name>fetch_service_owner_details</internal_name>
+        <label_cache>[{"name":"{{action.incident_number}}","label":"action➛incident_number","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_name}}","label":"step➛Script step➛owner_name","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"239bdf9f-9a23-4efe-8358-59cd843debdf"}},{"name":"{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_email}}","label":"step➛Script step➛owner_email","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"string","uiUniqueId":"967cb8bb-d4e3-4f7c-85b0-b135e5c30196"}}]</label_cache>
+        <master>true</master>
+        <name>Fetch Service Owner Details</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Fetch Service Owner Details">f9f3012c3bf03a10b1847021a3e45a36</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0894496c3bf03a10b1847021a3e45a72</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:45</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=0894496c3bf03a10b1847021a3e45a72"/>
+    <sys_variable_value action="delete_multiple" query="document_key=0894496c3bf03a10b1847021a3e45a72"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>0894496c3bf03a10b1847021a3e45a72</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9094496c3bf03a10b1847021a3e45afb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">9894496c3bf03a10b1847021a3e45ae9</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>0894496c3bf03a10b1847021a3e45a72</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>d494496c3bf03a10b1847021a3e45afb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">1894496c3bf03a10b1847021a3e45adc</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=0894496c3bf03a10b1847021a3e45a72"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>owner_email</field>
+        <id>0894496c3bf03a10b1847021a3e45a72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1094496c3bf03a10b1847021a3e45afa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</table>
+        <value>{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_email}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>owner_name</field>
+        <id>0894496c3bf03a10b1847021a3e45a72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>5494496c3bf03a10b1847021a3e45afa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</table>
+        <value>{{step[29e2a6df-341b-4dfc-afc2-6aba9e06398b].owner_name}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>0894496c3bf03a10b1847021a3e45a72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>dc94496c3bf03a10b1847021a3e45afa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>0894496c3bf03a10b1847021a3e45a72</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9894496c3bf03a10b1847021a3e45afa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=0894496c3bf03a10b1847021a3e45a72^sys_idNOT IN9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</action>
+        <cid>29e2a6df-341b-4dfc-afc2-6aba9e06398b</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:45</sys_created_on>
+        <sys_id>9c94496c3bf03a10b1847021a3e45a9e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9c94496c3bf03a10b1847021a3e45a9e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1894496c3bf03a10b1847021a3e45ace</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>9c94496c3bf03a10b1847021a3e45a9e</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>5c94496c3bf03a10b1847021a3e45ace</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+	var inc = new GlideRecord('incident');&#13;
+	if (inc.get('number', inputs.incident_number)) {&#13;
+		var serviceList = inc.business_service;&#13;
+&#13;
+		if (serviceList) {&#13;
+			var sysIds = serviceList.split(',');&#13;
+			if (sysIds.length &gt; 0) {&#13;
+				var names = [];&#13;
+				var emails = [];&#13;
+&#13;
+				var svc = new GlideRecord('cmdb_ci_service_auto');&#13;
+				svc.addQuery('sys_id', 'IN', sysIds);&#13;
+				svc.query();&#13;
+&#13;
+				while (svc.next()) {&#13;
+					var owner = svc.owned_by;&#13;
+					if (owner) {&#13;
+						names.push(owner.getDisplayValue());&#13;
+						emails.push(owner.email.toString());&#13;
+					}&#13;
+				}&#13;
+&#13;
+				outputs.owner_name = names.join(', ');&#13;
+				outputs.owner_email = emails.join(', ');&#13;
+			} else {&#13;
+				outputs.owner_name = 'No services found';&#13;
+				outputs.owner_email = '';&#13;
+			}&#13;
+		} else {&#13;
+			outputs.owner_name = 'No business services linked';&#13;
+			outputs.owner_email = '';&#13;
+		}&#13;
+	} else {&#13;
+		outputs.owner_name = 'Incident not found';&#13;
+		outputs.owner_email = '';&#13;
+	}&#13;
+})(inputs, outputs); </value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>9c94496c3bf03a10b1847021a3e45a9e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1094496c3bf03a10b1847021a3e45ace</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>incident_number</field>
+        <id>9c94496c3bf03a10b1847021a3e45a9e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9c94496c3bf03a10b1847021a3e45acf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_9c94496c3bf03a10b1847021a3e45a9e</table>
+        <value>{{action.incident_number}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>9c94496c3bf03a10b1847021a3e45a9e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>5494496c3bf03a10b1847021a3e45ace</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_9c94496c3bf03a10b1847021a3e45a9e^id=9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=9c94496c3bf03a10b1847021a3e45a9e^sys_idNOT IN5894496c3bf03a10b1847021a3e45aa5"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>incident_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>incident_number</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c94496c3bf03a10b1847021a3e45a9e</model>
+        <model_id>9c94496c3bf03a10b1847021a3e45a9e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_9c94496c3bf03a10b1847021a3e45a9e</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:45</sys_created_on>
+        <sys_id>5894496c3bf03a10b1847021a3e45aa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=9c94496c3bf03a10b1847021a3e45a9e^sys_idNOT IN1c94496c3bf03a10b1847021a3e45abf,5494496c3bf03a10b1847021a3e45ab9"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=967cb8bb-d4e3-4f7c-85b0-b135e5c30196</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_email</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>owner_email</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c94496c3bf03a10b1847021a3e45a9e</model>
+        <model_id>9c94496c3bf03a10b1847021a3e45a9e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9c94496c3bf03a10b1847021a3e45a9e</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1c94496c3bf03a10b1847021a3e45abf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=239bdf9f-9a23-4efe-8358-59cd843debdf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>owner_name</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Script step">9c94496c3bf03a10b1847021a3e45a9e</model>
+        <model_id>9c94496c3bf03a10b1847021a3e45a9e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_9c94496c3bf03a10b1847021a3e45a9e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>5494496c3bf03a10b1847021a3e45ab9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9c94496c3bf03a10b1847021a3e45a9e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_email</element>
+        <help/>
+        <hint/>
+        <label>owner_email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9c94496c3bf03a10b1847021a3e45a9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1094496c3bf03a10b1847021a3e45ac4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_name</element>
+        <help/>
+        <hint/>
+        <label>owner_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_9c94496c3bf03a10b1847021a3e45a9e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1894496c3bf03a10b1847021a3e45abe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=0894496c3bf03a10b1847021a3e45a72^sys_idNOT IN4494496c3bf03a10b1847021a3e45a78"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=18e09d05-ca3a-4712-ae1d-9b2f9042d515</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>incident_number</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>incident_number</label>
+        <mandatory>false</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</model>
+        <model_id>0894496c3bf03a10b1847021a3e45a72</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_0894496c3bf03a10b1847021a3e45a72</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:45</sys_created_on>
+        <sys_id>4494496c3bf03a10b1847021a3e45a78</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:45</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4494496c3bf03a10b1847021a3e45a78"/>
+    <sys_hub_action_output action="delete_multiple" query="model=0894496c3bf03a10b1847021a3e45a72^sys_idNOT IN1894496c3bf03a10b1847021a3e45adc,9094496c3bf03a10b1847021a3e45ad5,9894496c3bf03a10b1847021a3e45ae9,d094496c3bf03a10b1847021a3e45ae3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=6d07bc60-78f3-4e0b-a84b-903c8e420bbf</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</model>
+        <model_id>0894496c3bf03a10b1847021a3e45a72</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1894496c3bf03a10b1847021a3e45adc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1894496c3bf03a10b1847021a3e45adc"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=1894496c3bf03a10b1847021a3e45adc"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=variable_template_value,uiTypeLabel=Variable template value,uiUniqueId=13a50680-e4a1-455d-9b5b-e4d9f64c8a58</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_name</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">variable_template_value</internal_type>
+        <label>owner_name</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</model>
+        <model_id>0894496c3bf03a10b1847021a3e45a72</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9094496c3bf03a10b1847021a3e45ad5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9094496c3bf03a10b1847021a3e45ad5"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9094496c3bf03a10b1847021a3e45ad5"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ac1e102a-65f4-41a9-b99b-de8c241747f5,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</model>
+        <model_id>0894496c3bf03a10b1847021a3e45a72</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9894496c3bf03a10b1847021a3e45ae9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9894496c3bf03a10b1847021a3e45ae9"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=9894496c3bf03a10b1847021a3e45ae9"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=variable_template_value,uiTypeLabel=Variable template value,uiUniqueId=2266d055-08ef-4ff6-9ccd-361cf1b921a2</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>owner_email</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">variable_template_value</internal_type>
+        <label>owner_email</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</model>
+        <model_id>0894496c3bf03a10b1847021a3e45a72</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>d094496c3bf03a10b1847021a3e45ae3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d094496c3bf03a10b1847021a3e45ae3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d094496c3bf03a10b1847021a3e45ae3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=0894496c3bf03a10b1847021a3e45a72"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=0894496c3bf03a10b1847021a3e45a72^sys_idNOT IN9894496c3bf03a10b1847021a3e45afe"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Fetch Service Owner Details">0894496c3bf03a10b1847021a3e45a72</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9894496c3bf03a10b1847021a3e45afe</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9894496c3bf03a10b1847021a3e45afe"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>incident_number</element>
+        <help/>
+        <hint/>
+        <label>incident_number</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_0894496c3bf03a10b1847021a3e45a72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:45</sys_created_on>
+        <sys_id>8894496c3bf03a10b1847021a3e45a97</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:45</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0894496c3bf03a10b1847021a3e45a72"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_name</element>
+        <help/>
+        <hint/>
+        <label>owner_name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>1494496c3bf03a10b1847021a3e45adb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9094496c3bf03a10b1847021a3e45af2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>owner_email</element>
+        <help/>
+        <hint/>
+        <label>owner_email</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>9494496c3bf03a10b1847021a3e45ae8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 18:04:46</sys_created_on>
+        <sys_id>dc94496c3bf03a10b1847021a3e45ae1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 18:04:46</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_0894496c3bf03a10b1847021a3e45a72"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>f9f3012c3bf03a10b1847021a3e45a36</sys_id>
+        <latest_snapshot>0894496c3bf03a10b1847021a3e45a72</latest_snapshot>
+        <compiler_build>glide-zurich-07-01-2025__patch2-09-24-2025_10-12-2025_0904.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>

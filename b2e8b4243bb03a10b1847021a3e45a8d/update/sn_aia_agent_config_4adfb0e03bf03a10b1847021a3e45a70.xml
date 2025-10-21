@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_agent_config">
+    <sn_aia_agent_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <agent display_value="Collaboration Agent">129f78a03bf03a10b1847021a3e45ac1</agent>
+        <allow_guest_access>false</allow_guest_access>
+        <doc_url/>
+        <icon_url/>
+        <proficiency/>
+        <public>false</public>
+        <run_as_user/>
+        <sys_class_name>sn_aia_agent_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-10-21 17:44:08</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>4adfb0e03bf03a10b1847021a3e45a70</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Collaboration AIA App" source="x_snc_collab_aia">b2e8b4243bb03a10b1847021a3e45a8d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Collaboration AIA App">b2e8b4243bb03a10b1847021a3e45a8d</sys_scope>
+        <sys_update_name>sn_aia_agent_config_4adfb0e03bf03a10b1847021a3e45a70</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-10-21 17:44:08</sys_updated_on>
+    </sn_aia_agent_config>
+</record_update>
